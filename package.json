@@ -1,0 +1,37 @@
+{
+  "name": "cats-cattary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.13",
+    "gulp": "4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "autoprefixer": "10.0.2",
+    "gulp-postcss": "9.0.0",
+    "gulp-sourcemaps": "3.0.0",
+    "postcss": "8.1.7",
+    "stylelint": "13.7.2"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feizerr/cats-cattary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Feizerr/cats-cattary/issues"
+  },
+  "homepage": "https://github.com/Feizerr/cats-cattary#readme"
+}

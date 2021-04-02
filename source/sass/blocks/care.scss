@@ -1,0 +1,53 @@
+.care {
+	text-align: center;
+	padding-top: 148px;
+	padding-bottom: 98px;
+	background-image: url('../img/background-cat-desktop.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.care_wrapper {
+	margin: 0px 103px;
+}
+
+.care__title {
+	margin-bottom: 48px;
+}
+
+.care__list {
+	@include list-reset();
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 40px;
+	grid-row-gap: 43px;
+	text-align: left;
+}
+
+.care__item {
+	@include fonts(14px, 22px);
+	min-height: 165px;
+	border: 1px solid $brown;
+	border-right: 60px solid $brown;
+	padding-top: 38px;
+	padding-left: 58px;
+	padding-right: 58px;
+	box-sizing: border-box;
+}
+
+.care__link {
+	@include link();
+}
+
+.care__list-title {
+	@include offset(0, 0);
+	@include roboto(700);
+	color: $brown;
+	margin-bottom: 10px;
+}
+
+.care__text {
+	@include offset(0, 0);
+	@include roboto(300);
+	color: $white;
+}

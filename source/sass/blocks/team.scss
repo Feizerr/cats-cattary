@@ -1,0 +1,47 @@
+.team {
+	text-align: center;
+	padding-top: 83px;
+	padding-bottom: 72px;
+}
+
+.team__wrapper {
+	margin: 0px 103px;
+}
+
+.team__title {
+	@include offset(0, 0);
+	margin-bottom: 23px;
+}
+
+.team__description {
+	@include offset(0, 0);
+	@include roboto(400);
+	width: 510px;
+	margin: 0 auto;
+	margin-bottom: 22px;
+}
+
+.team__item-title {
+	@include offset(0, 0);
+	@include roboto(500);
+	@include fonts(24px, 28px);
+	color: $brown;
+	margin-bottom: 10px;
+	font-style: normal;
+}
+
+.team__item-jobTitle {
+	@include offset(0, 0);
+	@include roboto(500);
+	line-height: 21px;
+	color: $brown;
+	margin-bottom: 25px;
+	font-style: normal;
+}
+
+.team__opinion {
+	@include offset(0, 0);
+	@include roboto(300);
+	width: 399px;
+	text-align: left;
+}

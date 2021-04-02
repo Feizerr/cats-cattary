@@ -1,0 +1,19 @@
+.button {
+	@include link();
+	color: $white;
+	@include roboto(700);
+	border: 0.5px solid $brown;
+	display: block;
+	text-align: center;
+	padding: 18px 0 17px 0;
+	width: 200px;
+	box-sizing: border-box;
+
+	&:hover {
+		border-color: $white;
+	}
+
+	&:active {
+		background-color: rgba($brown, 0.2);
+	}
+}

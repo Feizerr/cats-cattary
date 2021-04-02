@@ -1,0 +1,25 @@
+.specificities {
+	background-color: $dark-grey;
+	text-align: center;
+	margin-bottom: 83px;
+}
+
+.specificities__wrapper {
+	margin: 0px 103px;
+}
+
+.specificities__title {
+	margin-bottom: 23px;
+}
+
+.specificities__description {
+	width: 735px;
+	line-height: 26px;
+	margin: 0 auto;
+}
+
+.specificities__list {
+	@include list-reset();
+	@include roboto(300);
+	line-height: 21px;
+}
