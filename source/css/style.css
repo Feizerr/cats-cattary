@@ -167,6 +167,45 @@
   font-weight: 300;
   color: #ffffff; }
 
+.footer__container {
+  margin: 0px 103px;
+  min-height: 156px;
+  box-sizing: border-box; }
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 57px; }
+
+.footer__logo {
+  margin-right: 125px; }
+
+.footer__social {
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-between; }
+
+.footer__address {
+  font-size: 14px;
+  line-height: 26px;
+  color: #fdf2e6;
+  padding: 0;
+  margin: 0;
+  margin-right: 60px; }
+
+.footer__pnone {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fdf2e6; }
+
 .gallery {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -266,6 +305,129 @@
   justify-content: center;
   align-items: center; }
 
+.questions {
+  text-align: center;
+  background-color: #1f1c1d;
+  padding-top: 73px;
+  padding-bottom: 80px; }
+
+.questions__wrapper {
+  margin: 0px 103px; }
+
+.questions__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px; }
+
+.questions__description {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 53px; }
+
+.questions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #fdf2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.questions__item {
+  text-align: left;
+  border: 1px solid #a07b50;
+  width: 793px; }
+  .questions__item:not(:last-child) {
+    margin-bottom: 37px; }
+
+.questions__button-block {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a07b50; }
+
+.questions__main-question {
+  padding: 0;
+  margin: 0;
+  max-width: 610px;
+  padding: 47px 20px 45px 43px; }
+
+.questions__button {
+  display: block;
+  width: 106px;
+  min-height: 100%;
+  border: none;
+  border-left: 1px solid #a07b50;
+  background-color: inherit;
+  text-align: left; }
+  .questions__button--active {
+    background-color: #a07b50;
+    border: none; }
+
+.questions__answer {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  padding: 40px 80px 40px 42px;
+  max-width: 70%; }
+
+.reviews {
+  text-align: center;
+  padding-top: 83px;
+  padding-bottom: 72px;
+  background-color: #1f1c1d; }
+
+.reviews__wrapper {
+  margin: 0px 103px; }
+
+.reviews__content {
+  background-color: #181617;
+  width: 640px;
+  padding: 109px 87px 100px 145px;
+  text-align: left; }
+
+.reviews__blockquote-wrapper {
+  padding: 0;
+  margin: 0; }
+
+.reviews__author {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+  display: block;
+  width: 407px;
+  margin-bottom: 19px; }
+
+.reviews__opinion {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.72);
+  width: 100%;
+  margin-bottom: 35px; }
+
+.reviews__data {
+  display: block;
+  color: #a07b50;
+  font-size: 12px;
+  line-height: 18px; }
+
 .slider__button {
   display: none; }
 
@@ -311,6 +473,22 @@
 .team__wrapper {
   margin: 0px 103px; }
 
+.team__item-wrapper {
+  border: 1px solid rgba(160, 123, 80, 0.43);
+  width: 660px;
+  min-height: 402px;
+  padding: 23px 34px;
+  box-sizing: border-box; }
+
+.team__blockquote-wrapper {
+  padding: 0;
+  margin: 0;
+  background-color: #1f1c1d;
+  min-height: 356px;
+  padding: 69px 20px 70px 98px;
+  box-sizing: border-box;
+  text-align: left; }
+
 .team__title {
   padding: 0;
   margin: 0;
@@ -353,5 +531,16 @@
   font-weight: 300;
   width: 399px;
   text-align: left; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

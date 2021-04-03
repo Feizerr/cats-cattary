@@ -8,6 +8,24 @@
 	margin: 0px 103px;
 }
 
+.team__item-wrapper {
+	border: 1px solid rgba($brown, 0.43);
+	width: 660px;
+	min-height: 402px;
+	padding: 23px 34px;
+	box-sizing: border-box;
+
+}
+
+.team__blockquote-wrapper {
+	@include offset(0, 0);
+	background-color: $dark-grey;
+	min-height: 356px;
+	padding: 69px 20px 70px 98px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
 .team__title {
 	@include offset(0, 0);
 	margin-bottom: 23px;

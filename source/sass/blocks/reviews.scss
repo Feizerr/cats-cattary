@@ -1,0 +1,47 @@
+.reviews {
+	text-align: center;
+	padding-top: 83px;
+	padding-bottom: 72px;
+	background-color: $dark-grey;
+}
+
+.reviews__wrapper {
+	margin: 0px 103px;
+}
+
+.reviews__content {
+	background-color: $dark;
+	width: 640px;
+	padding: 109px 87px 100px 145px;
+	text-align: left;
+}
+
+.reviews__blockquote-wrapper {
+	@include offset(0, 0);
+}
+
+.reviews__author {
+	@include offset(0, 0);
+	@include roboto(500);
+	@include fonts(24px, 28px);
+	font-style: normal;
+	display: block;
+	width: 407px;
+	margin-bottom: 19px;
+}
+
+.reviews__opinion {
+	@include offset(0, 0);
+	@include roboto(300);
+	@include fonts(14px, 22px);
+	color: rgba($white, 0.72);
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.reviews__data {
+	display: block;
+	color: $brown;
+	@include fonts(12px, 18px);
+
+}
