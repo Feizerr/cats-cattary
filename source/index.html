@@ -55,14 +55,35 @@
             <div class="pets__slider slider__list slider__container">
               <div class="pets__gallery gallery slider__wrapper">
                 <div class="gallery__item gallery__item--top slider__slide">
-                  <img src="img/white-cat-desktop.jpg" width="519" height="214" alt="Фотография белого кота">
+	                <picture>
+	                	<!-- <source type="image/webp" media="(max-width: 1367px)" srcset="img/white-cat-tablet.webp 1x, img/white-cat-tablet@2x.webp 2x">
+	                  <source type="image/webp" media="(max-width: 767px)" srcset="img/grey-cat-mobile.webp 1x, img/grey-cat-mobile@2x.webp 2x">
+	                  <source type="image/webp" srcset="img/white-cat-desktop.webp 1x, img/white-cat-desktop@2x.webp 2x"> -->
+	                  <source media="(max-width: 1367px)" srcset="img/white-cat-tablet.jpg 1x, img/white-cat-tablet@2x.jpg 2x">
+	                  <source media="(max-width: 767px)" srcset="img/grey-cat-mobile.jpg 1x, img/grey-cat-mobile@2x.jpg 2x">
+	                  <img class="gallery__cat-img" src="img/white-cat-desktop.jpg" srcset="img/white-cat-desktop@2x.jpg 2x" width="519" height="214" alt="Фотография белого кота">
+	                </picture>
                 </div>
                 <div class="gallery__item gallery__item--bottom slider__slide">
-                  <img src="img/color-cat-desktop.jpg" width="519" height="214" alt="Фотография кота с черепашьим окрасом">
-                </div>
-                <div class="gallery__item gallery__item--large slider__slide slider__slide--active">
-                  <img src="img/grey-cat-desktop.jpg" width="463" height="482" alt="Фотография серого кота">
-                </div>
+	                <picture>
+	                	<!-- <source type="image/webp" media="(max-width: 1367px)" srcset="img/color-cat-tablet.webp 1x, img/color-cat-tablet@2x.webp 2x">
+	                  <source type="image/webp" media="(max-width: 767px)" srcset="img/grey-cat-mobile.webp 1x, img/grey-cat-mobile@2x.webp 2x">
+	                  <source type="image/webp" srcset="img/color-cat-desktop.webp 1x, img/color-cat-desktop@2x.webp 2x"> -->
+	                  <source media="(max-width: 1367px)" srcset="img/color-cat-tablet.jpg 1x, img/color-cat-tablet@2x.jpg 2x">
+	                  <source media="(max-width: 767px)" srcset="img/grey-cat-mobile.jpg 1x, img/grey-cat-mobile@2x.jpg 2x">
+	                  <img class="gallery__cat-img" src="img/color-cat-desktop.jpg" srcset="img/color-cat-desktop@2x.jpg 2x" width="519" height="214" alt="Фотография кота с черепашьим окрасом">
+	                </picture>
+              	</div>
+              	<div class="gallery__item gallery__item--large slider__slide slider__slide--active">
+	                <picture>
+										<!--<source type="image/webp" media="(max-width: 1367px)" srcset="img/grey-cat-tablet.webp 1x, img/grey-cat-tablet@2x.webp 2x">
+	                  <source type="image/webp" media="(max-width: 767px)" srcset="img/grey-cat-desktop.webp 1x, img/grey-cat-desktop@2x.webp 2x">
+	                  <source type="image/webp" srcset="img/grey-cat-desktop.webp 1x, img/grey-cat-desktop@2x.webp 2x"> -->
+	                  <source media="(max-width: 1367px)" srcset="img/grey-cat-tablet.jpg 1x, img/grey-cat-tablet@2x.jpg 2x">
+	                  <source media="(max-width: 767px)" srcset="img/grey-cat-mobile.jpg 1x, img/grey-cat-mobile@2x.jpg 2x">
+	                  <img class="gallery__cat-img" src="img/grey-cat-desktop.jpg" srcset="img/grey-cat-desktop@2x.jpg 2x" width="463" height="482" alt="Фотография серого кота">
+	                </picture>
+              	</div>
               </div>
             </div>
             <button class="slider__button slider__button--prev" type="button">
@@ -85,7 +106,14 @@
 	      <p class="section__description specificities__description">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных
 	      </p>
 	      <div class="specificities__img">
-	      	<!-- Photo -->
+	      	<picture>
+						<!--<source type="image/webp" media="(max-width: 1367px)" srcset="img/full-cat-tablet.webp 1x, img/full-cat-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/full-cat-desktop.webp 1x, img/full-cat-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/full-cat-desktop.webp 1x, img/full-cat-desktop@2x.webp 2x"> -->
+            <source media="(max-width: 1367px)" srcset="img/full-cat-tablet.png 1x, img/full-cat-tablet@2x.png 2x">
+            <source media="(max-width: 767px)" srcset="img/full-cat-mobile.png 1x, img/full-cat-mobile@2x.png 2x">
+            <img class="specificities__photo" src="img/full-cat-desktop.png" srcset="img/full-cat-desktop@2x.png 2x" width="415" height="623" alt="Фотография рыжего кота">
+          </picture>
 	      </div>
 	      <ul class="specificities__list">
 	        <li class="specificities__item">
@@ -156,7 +184,14 @@
 	      	<div class="team__list slider__wrapper">
 	      		<div class="team__wrapper-outer">
 	      			<div class="team__img-wrapper">
-                <img src="img/serzh-desktop.jpg" width="360" height="356" alt="Фотография сотрудника питомника">
+	      				<picture>
+									<!--<source type="image/webp" media="(max-width: 1367px)" srcset="img/serzh-tablet.webp 1x, img/serzh-tablet@2x.webp 2x">
+			            <source type="image/webp" media="(max-width: 767px)" srcset="img/serzh-mobile.webp 1x, img/serzh-mobile@2x.webp 2x">
+			            <source type="image/webp" srcset="img/serzh-desktop.webp 1x, img/serzh-desktop@2x.webp 2x"> -->
+			            <source media="(max-width: 1367px)" srcset="img/serzh-tablet.png 1x, img/serzh-tablet@2x.png 2x">
+			            <source media="(max-width: 767px)" srcset="img/serzh-mobile.jpg 1x, img/serzh-mobile.jpg@2x.png 2x">
+			            <img class="team__img" src="img/serzh-desktop.jpg" srcset="img/serzh-desktop@2x.jpg 2x" width="360" height="356" alt="Фотография сотрудника питомника">
+			          </picture>
               </div>
               <div class="team__item-wrapper">
                 <blockquote class="team__blockquote-wrapper">
@@ -254,7 +289,14 @@
 	      	<div class="reviews__list slider__wrapper">
 	      		<div class="reviews__item slider__slide">
 	      			<div class="reviews__img-wrapper">
-                <img src="img/review-desktop.jpg" width="483" height="331" alt="Фотография автора отзыва">
+	      				<picture>
+									<!--<source type="image/webp" media="(max-width: 1367px)" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x">
+			            <source type="image/webp" media="(max-width: 767px)" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
+			            <source type="image/webp" srcset="img/review-desktop.webp 1x, img/review-desktop@2x.webp 2x"> -->
+			            <source media="(max-width: 1367px)" srcset="img/review-tablet.png 1x, img/review-tablet@2x.png 2x">
+			            <source media="(max-width: 767px)" srcset="img/review-mobile.jpg 1x, img/review-mobile.jpg@2x.png 2x">
+			            <img class="reviews__img" src="img/review-desktop.jpg" srcset="img/review-desktop@2x.jpg 2x" width="483" height="331" alt="Фотография автора отзыва">
+			          </picture>
               </div>
               <div class="reviews__content">
                 <blockquote class="reviews__blockquote-wrapper">

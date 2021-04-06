@@ -5,6 +5,28 @@
 	background-image: url('../img/background-cat-desktop.jpg');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
+
+	@media (min-resolution: 2dppx) {
+    background-image: url('../img/background-cat-desktop@2x.jpg');
+    background-size: 100% auto;
+		background-repeat: no-repeat;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url('../img/background-cat-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+	    background-image: url('../img/background-cat-mobile@2x.jpg');
+	  }
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url('../img/background-cat-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+	    background-image: url('../img/background-cat-tablet@2x.jpg');
+	  }
+  }
 }
 
 .care_wrapper {

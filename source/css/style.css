@@ -119,6 +119,23 @@
   background-image: url("../img/background-cat-desktop.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .care {
+      background-image: url("../img/background-cat-desktop@2x.jpg");
+      background-size: 100% auto;
+      background-repeat: no-repeat; } }
+  @media (max-width: 768px) {
+    .care {
+      background-image: url("../img/background-cat-mobile.jpg"); } }
+  @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
+    .care {
+      background-image: url("../img/background-cat-mobile@2x.jpg"); } }
+  @media (max-width: 1366px) {
+    .care {
+      background-image: url("../img/background-cat-tablet.jpg"); } }
+  @media (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1366px) and (min-resolution: 2dppx) {
+    .care {
+      background-image: url("../img/background-cat-tablet@2x.jpg"); } }
 
 .care_wrapper {
   margin: 0px 103px; }
