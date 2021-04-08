@@ -7,13 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Питомник Мейн Кунов</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body class="page">
   <header class="header">
   	<div class="header__container">
-	  	<a class="header__logo" aria-label="Логотип питомника Мейн Кунов">Здесь будет лого</a>
+	  	<a class="header__logo" aria-label="Логотип питомника Мейн Кунов">
+	  		<svg class="header__logo-svg" width="55" height="25">
+            <use xlink:href="img/sprite.svg#crown" x="0" y="0"></use>
+        </svg>
+	  	</a>
 	    <div class="header__content">
 	      <p class="header__text">Новосибирск</p>
 	      <h1 class="header__title">Питомник Мейн-Кунов</h1>
@@ -22,13 +26,25 @@
 	    </div>
 	    <ul class="header__social-list social">
 	      <li>
-	      	<a href="#" class="social__link">Vkontakte</a>
+	      	<a href="#" class="social__link">
+	      		<svg class="header__logo-svg" width="13" height="8">
+            	<use xlink:href="img/sprite.svg#white-vk" x="0" y="0"></use>
+        		</svg>
+	      	</a>
 	      </li>
 	      <li>
-	      	<a href="#" class="social__link">Twitter</a>
+	      	<a href="#" class="social__link">
+	      		<svg class="header__logo-svg" width="15" height="10">
+            	<use xlink:href="img/sprite.svg#white-twitter" x="0" y="0"></use>
+        		</svg>
+	      	</a>
 	      </li>
 	      <li>
-	      	<a href="#" class="social__link">Facebook</a>
+	      	<a href="#" class="social__link">
+	      		<svg class="header__logo-svg" width="5" height="11">
+            	<use xlink:href="img/sprite.svg#white-fb" x="0" y="0"></use>
+        		</svg>
+	      	</a>
 	      </li>
 	    </ul>
   	</div>
@@ -56,9 +72,9 @@
               <div class="pets__gallery gallery slider__wrapper">
                 <div class="gallery__item gallery__item--top slider__slide">
 	                <picture>
-	                	<!-- <source type="image/webp" media="(max-width: 1367px)" srcset="img/white-cat-tablet.webp 1x, img/white-cat-tablet@2x.webp 2x">
+	                	<source type="image/webp" media="(max-width: 1367px)" srcset="img/white-cat-tablet.webp 1x, img/white-cat-tablet@2x.webp 2x">
 	                  <source type="image/webp" media="(max-width: 767px)" srcset="img/grey-cat-mobile.webp 1x, img/grey-cat-mobile@2x.webp 2x">
-	                  <source type="image/webp" srcset="img/white-cat-desktop.webp 1x, img/white-cat-desktop@2x.webp 2x"> -->
+	                  <source type="image/webp" srcset="img/white-cat-desktop.webp 1x, img/white-cat-desktop@2x.webp 2x">
 	                  <source media="(max-width: 1367px)" srcset="img/white-cat-tablet.jpg 1x, img/white-cat-tablet@2x.jpg 2x">
 	                  <source media="(max-width: 767px)" srcset="img/grey-cat-mobile.jpg 1x, img/grey-cat-mobile@2x.jpg 2x">
 	                  <img class="gallery__cat-img" src="img/white-cat-desktop.jpg" srcset="img/white-cat-desktop@2x.jpg 2x" width="519" height="214" alt="Фотография белого кота">
@@ -66,9 +82,9 @@
                 </div>
                 <div class="gallery__item gallery__item--bottom slider__slide">
 	                <picture>
-	                	<!-- <source type="image/webp" media="(max-width: 1367px)" srcset="img/color-cat-tablet.webp 1x, img/color-cat-tablet@2x.webp 2x">
+	                	<source type="image/webp" media="(max-width: 1367px)" srcset="img/color-cat-tablet.webp 1x, img/color-cat-tablet@2x.webp 2x">
 	                  <source type="image/webp" media="(max-width: 767px)" srcset="img/grey-cat-mobile.webp 1x, img/grey-cat-mobile@2x.webp 2x">
-	                  <source type="image/webp" srcset="img/color-cat-desktop.webp 1x, img/color-cat-desktop@2x.webp 2x"> -->
+	                  <source type="image/webp" srcset="img/color-cat-desktop.webp 1x, img/color-cat-desktop@2x.webp 2x">
 	                  <source media="(max-width: 1367px)" srcset="img/color-cat-tablet.jpg 1x, img/color-cat-tablet@2x.jpg 2x">
 	                  <source media="(max-width: 767px)" srcset="img/grey-cat-mobile.jpg 1x, img/grey-cat-mobile@2x.jpg 2x">
 	                  <img class="gallery__cat-img" src="img/color-cat-desktop.jpg" srcset="img/color-cat-desktop@2x.jpg 2x" width="519" height="214" alt="Фотография кота с черепашьим окрасом">
@@ -76,9 +92,9 @@
               	</div>
               	<div class="gallery__item gallery__item--large slider__slide slider__slide--active">
 	                <picture>
-										<!--<source type="image/webp" media="(max-width: 1367px)" srcset="img/grey-cat-tablet.webp 1x, img/grey-cat-tablet@2x.webp 2x">
+										<source type="image/webp" media="(max-width: 1367px)" srcset="img/grey-cat-tablet.webp 1x, img/grey-cat-tablet@2x.webp 2x">
 	                  <source type="image/webp" media="(max-width: 767px)" srcset="img/grey-cat-desktop.webp 1x, img/grey-cat-desktop@2x.webp 2x">
-	                  <source type="image/webp" srcset="img/grey-cat-desktop.webp 1x, img/grey-cat-desktop@2x.webp 2x"> -->
+	                  <source type="image/webp" srcset="img/grey-cat-desktop.webp 1x, img/grey-cat-desktop@2x.webp 2x">
 	                  <source media="(max-width: 1367px)" srcset="img/grey-cat-tablet.jpg 1x, img/grey-cat-tablet@2x.jpg 2x">
 	                  <source media="(max-width: 767px)" srcset="img/grey-cat-mobile.jpg 1x, img/grey-cat-mobile@2x.jpg 2x">
 	                  <img class="gallery__cat-img" src="img/grey-cat-desktop.jpg" srcset="img/grey-cat-desktop@2x.jpg 2x" width="463" height="482" alt="Фотография серого кота">
@@ -107,9 +123,9 @@
 	      </p>
 	      <div class="specificities__img">
 	      	<picture>
-						<!--<source type="image/webp" media="(max-width: 1367px)" srcset="img/full-cat-tablet.webp 1x, img/full-cat-tablet@2x.webp 2x">
+						<source type="image/webp" media="(max-width: 1367px)" srcset="img/full-cat-tablet.webp 1x, img/full-cat-tablet@2x.webp 2x">
             <source type="image/webp" media="(max-width: 767px)" srcset="img/full-cat-desktop.webp 1x, img/full-cat-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/full-cat-desktop.webp 1x, img/full-cat-desktop@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/full-cat-desktop.webp 1x, img/full-cat-desktop@2x.webp 2x">
             <source media="(max-width: 1367px)" srcset="img/full-cat-tablet.png 1x, img/full-cat-tablet@2x.png 2x">
             <source media="(max-width: 767px)" srcset="img/full-cat-mobile.png 1x, img/full-cat-mobile@2x.png 2x">
             <img class="specificities__photo" src="img/full-cat-desktop.png" srcset="img/full-cat-desktop@2x.png 2x" width="415" height="623" alt="Фотография рыжего кота">
@@ -137,9 +153,24 @@
     		<h2 class="section__title advantages__title">Почему именно мы?</h1>
 	      <p class="section__description advantages__text">Приобретая  животное в нашем питомнике, вы получите</p>
 	      <ul class="advantages__list">
-	        <li class="advantages__item advantages__item--active"> Бесплатное ветеринарное обслуживание 5 лет</li>
-	        <li class="advantages__item">Консультирование по любому вопросу 24 часа в сутки</li>
-	        <li class="advantages__item">Индивидуальный подбор питания для вашего кота</li>
+	        <li class="advantages__item advantages__item--active">
+		        <svg class="header__logo-svg" width="98" height="107">
+	            <use xlink:href="img/sprite.svg#tools" x="0" y="0"></use>
+	        	</svg>
+	        	<p class="advantages__description">Бесплатное ветеринарное обслуживание 5 лет</p>
+        	</li>
+	       	<li class="advantages__item">
+		        <svg class="header__logo-svg" width="107" height="95">
+	            <use xlink:href="img/sprite.svg#24" x="0" y="0"></use>
+	        	</svg>
+	        	<p class="advantages__description">Консультирование по любому вопросу 24 часа в сутки</p>
+	        </li>
+	        <li class="advantages__item">
+	        	<svg class="header__logo-svg" width="70" height="108">
+            	<use xlink:href="img/sprite.svg#milk" x="0" y="0"></use>
+        		</svg>
+	        	<p class="advantages__description">Индивидуальный подбор питания для вашего кота</p>
+	        </li>
 	      </ul>
     	</div>
   	</section>
@@ -185,9 +216,9 @@
 	      		<div class="team__wrapper-outer">
 	      			<div class="team__img-wrapper">
 	      				<picture>
-									<!--<source type="image/webp" media="(max-width: 1367px)" srcset="img/serzh-tablet.webp 1x, img/serzh-tablet@2x.webp 2x">
+									<source type="image/webp" media="(max-width: 1367px)" srcset="img/serzh-tablet.webp 1x, img/serzh-tablet@2x.webp 2x">
 			            <source type="image/webp" media="(max-width: 767px)" srcset="img/serzh-mobile.webp 1x, img/serzh-mobile@2x.webp 2x">
-			            <source type="image/webp" srcset="img/serzh-desktop.webp 1x, img/serzh-desktop@2x.webp 2x"> -->
+			            <source type="image/webp" srcset="img/serzh-desktop.webp 1x, img/serzh-desktop@2x.webp 2x">
 			            <source media="(max-width: 1367px)" srcset="img/serzh-tablet.png 1x, img/serzh-tablet@2x.png 2x">
 			            <source media="(max-width: 767px)" srcset="img/serzh-mobile.jpg 1x, img/serzh-mobile.jpg@2x.png 2x">
 			            <img class="team__img" src="img/serzh-desktop.jpg" srcset="img/serzh-desktop@2x.jpg 2x" width="360" height="356" alt="Фотография сотрудника питомника">
@@ -204,16 +235,25 @@
                 <ul class="social team__social">
                   <li class="social__item">
                     <a href="#" class="social__link">
+                    	<svg class="team__icon-svg" width="7" height="15">
+					            	<use xlink:href="img/sprite.svg#white-fb" x="0" y="0"></use>
+					        		</svg>
                       <span class="visually-hidden">Фейсбук</span>
                     </a>
                   </li>
                   <li class="social__item">
                     <a href="#" class="social__link">
+                    	<svg class="team__icon-svg" width="20" height="14">
+					            	<use xlink:href="img/sprite.svg#white-twitter" x="0" y="0"></use>
+					        		</svg>
                       <span class="visually-hidden">Твиттер</span>
                     </a>
                   </li>
                   <li class="social__item">
                     <a href="#" class="social__link">
+                    	<svg class="header__logo-svg" width="21" height="12">
+					            	<use xlink:href="img/sprite.svg#white-vk" x="0" y="0"></use>
+					        		</svg>
                       <span class="visually-hidden">ВКонтакте</span>
                     </a>
                   </li>
@@ -272,7 +312,7 @@
 	        	<div class="questions__button-block">
         			<p class="questions__main-question">Как подготовить дом к приему нового питомца?
         			</p>
-          		<button class="questions__button questions__button--active" type="button">Подробнее</button>
+          		<button class="questions__button questions__button" type="button">Подробнее</button>
 	          </div>
 	          <div class="questions__answer">
 	          	<p>Обязательно проверьте квартиру на безопасность. Уберите острые предметы и растения, купите специальные решетки для окон. Для молодого котенка обязательно понадобится когтеточка, лоток и мнимум две миски: для корма и для еды. Чтобы вашему питомцу не было скучно, купите игрушки, но такие, чтобы котенок не мог из разгрызть и подавиться. Корм и наполнитель для лотка мы привезем вам сами</p>
@@ -290,9 +330,9 @@
 	      		<div class="reviews__item slider__slide">
 	      			<div class="reviews__img-wrapper">
 	      				<picture>
-									<!--<source type="image/webp" media="(max-width: 1367px)" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x">
+									<source type="image/webp" media="(max-width: 1367px)" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x">
 			            <source type="image/webp" media="(max-width: 767px)" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
-			            <source type="image/webp" srcset="img/review-desktop.webp 1x, img/review-desktop@2x.webp 2x"> -->
+			            <source type="image/webp" srcset="img/review-desktop.webp 1x, img/review-desktop@2x.webp 2x">
 			            <source media="(max-width: 1367px)" srcset="img/review-tablet.png 1x, img/review-tablet@2x.png 2x">
 			            <source media="(max-width: 767px)" srcset="img/review-mobile.jpg 1x, img/review-mobile.jpg@2x.png 2x">
 			            <img class="reviews__img" src="img/review-desktop.jpg" srcset="img/review-desktop@2x.jpg 2x" width="483" height="331" alt="Фотография автора отзыва">
@@ -305,14 +345,20 @@
                 </blockquote>
                 <div class="reviews__content-wrapper">
                 	<time class="reviews__data" datetime="2018-05-24">24 мая 2018</time>
-                	<ul class="social team__social">
+                	<ul class="social reviews__social">
                   <li class="social__item">
-                    <a href="#" class="social__link">
+                    <a href="#" class="reviews__link social__link">
+                    	<svg class="reviews__icon-svg" width="14" height="10">
+					            	<use xlink:href="img/sprite.svg#twitter" x="0" y="0"></use>
+					        		</svg>
                       <span class="visually-hidden">Твиттер</span>
                     </a>
                   </li>
-                  <li class="social__item">
-                    <a href="#" class="social__link">
+                  <li class="reviews__item">
+                    <a href="#" class="reviews__link social__link">
+                    	<svg class="reviews__icon-svg" width="13" height="8">
+					            	<use xlink:href="img/sprite.svg#vk" x="0" y="0"></use>
+					        		</svg>
                       <span class="visually-hidden">ВКонтакте</span>
                     </a>
                   </li>
@@ -336,25 +382,34 @@
   	<div class="footer__container">
   		<div class="footer__wrapper">
 	  		<div class ="footer__logo">
-	  			<a href="#" aria-label="Логотип питомника Мейн Кунов">Логотип питомника Мейн Кунов
+	  			<a href="#" aria-label="Логотип питомника Мейн Кунов">
+	  				<svg class="footer__logo-svg" width="47" height="21">
+	            <use xlink:href="img/sprite.svg#crown" x="0" y="0"></use>
+	        	</svg>
 	  			</a>
 	  		</div>
 		    <ul class="social footer__social">
-	        <li class="social__item">
-	          <a href="#" class="social__link">
-	            <span class="visually-hidden">Фейсбук</span>
-	          </a>
-	        </li>
-	        <li class="social__item">
-	          <a href="#" class="social__link">
-	            <span class="visually-hidden">Твиттер</span>
-	          </a>
-	        </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
+		    	<li>
+		      	<a href="#" class="social__link">
+		      		<svg class="footer__logo-svg" width="7" height="15">
+	            	<use xlink:href="img/sprite.svg#white-fb" x="0" y="0"></use>
+	        		</svg>
+		      	</a>
+		      </li>
+		      <li>
+		      	<a href="#" class="social__link">
+		      		<svg class="footer__logo-svg" width="20" height="14">
+	            	<use xlink:href="img/sprite.svg#white-twitter" x="0" y="0"></use>
+	        		</svg>
+		      	</a>
+		      </li>
+	        <li>
+		      	<a href="#" class="social__link">
+		      		<svg class="footer__logo-svg" width="21" height="12">
+	            	<use xlink:href="img/sprite.svg#white-vk" x="0" y="0"></use>
+	        		</svg>
+		      	</a>
+		      </li>
         </ul>
 		    <p class="footer__address">Новосибирск, Пушкинский проспект, 19</p>
 		    <a class='footer__pnone' href="tel:+73839006465">+7 (383) 900-64-65</a>

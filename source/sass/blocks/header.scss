@@ -1,6 +1,13 @@
+.header {
+		background-image: url("../img/ginger-cat-desktop.png");
+		background-repeat: no-repeat;
+  	background-size: auto 100% ;
+  	background-position: right;
+}
+
 .header__container {
-	margin: auto 78px;
-	margin-bottom: 64px;
+	margin: 0 78px;
+	padding-bottom: 64px;
 }
 
 .header__content {
@@ -29,4 +36,15 @@
 
 .header__button {
 	margin-bottom: 50px;
+}
+
+.header__logo {
+	display: block;
+	padding-top: 47px;
+	padding-bottom: 115px;
+	text-align: center;
+}
+
+.header__logo-svg {
+	fill: $white;
 }

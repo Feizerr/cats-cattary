@@ -29,11 +29,19 @@
 	width: 360px;
 	height: 301px;
 	background-color: $dark-grey;
-	padding: 187px 40px 0 40px;
+	padding: 55px 40px 0 40px;
 	border: 20px solid $dark-grey;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 
 	&--active {
 		background-color: $brown;
 	}
+}
+
+.advantages__description {
+	@include offset(0, 0);
+	@include fonts(16px, 24px);
 }
