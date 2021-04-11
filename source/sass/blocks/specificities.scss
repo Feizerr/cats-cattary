@@ -5,11 +5,13 @@
 }
 
 .specificities__wrapper {
-	margin: 0px 103px;
+	margin: 0 auto;
 }
 
 .specificities__title {
+	margin: 0 auto;
 	margin-bottom: 23px;
+	text-align: center;
 }
 
 .specificities__description {
@@ -20,6 +22,10 @@
 	@media (max-width: $desktop-width) {
 		width: 443px;
 	}
+
+	@media (max-width: $tablet-width) {
+		width: 90%;
+	}
 }
 
 .specificities__list {
@@ -27,3 +33,20 @@
 	@include roboto(300);
 	line-height: 21px;
 }
+
+.specificities__photo {
+	@media (max-width: $desktop-width) {
+		width: 410px;
+		height: auto;
+	}
+
+	@media (max-width: $tablet-width) {
+		width: 267px;
+		height: auto;
+	}
+}
+
+.specificities__item {
+	width: 200px;
+}
+

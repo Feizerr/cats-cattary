@@ -8,7 +8,7 @@
 
 	@media (max-width: $desktop-width) {
 		display: flex;
-		margin-bottom: 202px;
+		margin-bottom: 80px;
 		flex-wrap: wrap;
 	}
 
@@ -31,5 +31,12 @@
 	&--large {
 		grid-column: 2/3;
 		grid-row: 1/3;
+	}
+}
+
+.gallery__cat-img {
+	@media (max-width: $tablet-width) {
+		max-width: 234px;
+		height: auto;
 	}
 }

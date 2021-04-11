@@ -3,10 +3,20 @@
 	padding-top: 83px;
 	padding-bottom: 72px;
 	background-color: $dark-grey;
+
+	@media (max-width: $tablet-width) {
+		padding-top: 0;
+	}
 }
 
-.reviews__wrapper {
-	margin: 0px 103px;
+.reviews__title {
+	margin: 0 auto;
+	margin-bottom: 58px;
+
+	@media (max-width: $desktop-width) {
+		margin-bottom: 143px;
+		max-width: 230px;
+	}
 }
 
 .reviews__content {
@@ -14,10 +24,25 @@
 	width: 640px;
 	padding: 109px 87px 100px 145px;
 	text-align: left;
+	box-sizing: border-box;
+	margin: 0 auto;
+
+	@media (max-width: $desktop-width) {
+		width: 578px;
+		padding: 148px 80px 36px 80px;
+		text-align: center;
+	}
+
+	@media (max-width: $tablet-width) {
+		width: 290px;
+		padding: 118px 31px 40px 31px;
+		text-align: center;
+	}
 }
 
 .reviews__blockquote-wrapper {
 	@include offset(0, 0);
+	position: relative;
 }
 
 .reviews__author {
@@ -28,6 +53,12 @@
 	display: block;
 	width: 407px;
 	margin-bottom: 19px;
+
+	@media (max-width: $tablet-width) {
+		@include fonts(18px, 21px);
+		width: 227px;
+		margin-bottom: 25px;
+	}
 }
 
 .reviews__opinion {
@@ -37,6 +68,12 @@
 	color: rgba($white, 0.72);
 	width: 100%;
 	margin-bottom: 35px;
+
+	@media (max-width: $tablet-width) {
+		@include fonts(14px, 19px);
+		width: 227px;
+		margin-bottom: 25px;
+	}
 }
 
 .reviews__data {
@@ -44,4 +81,67 @@
 	color: $brown;
 	@include fonts(12px, 18px);
 
+}
+
+.reviews__content-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.reviews__data {
+	margin-right: 36px;
+}
+
+.reviews__social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	min-width: 73px;
+}
+
+.reviews__social-item {
+	width: 26px;
+	height: 26px;
+	border: 1px solid $brown;
+}
+
+.reviews__item {
+	margin-left: 350px;
+
+	@media (max-width: $desktop-width) {
+		margin-left: 0;
+	}
+}
+
+.reviews__img-wrapper {
+	position: absolute;
+	top: -109px;
+	left: -510px;
+	z-index: 2;
+
+
+	@media (max-width: $desktop-width) {
+		top: -240px;
+		left: 60px;
+	}
+
+	@media (max-width: $tablet-width) {
+		top: -200px;
+		left: -10px;
+	}
+}
+
+.reviews__img {
+	@media (max-width: $desktop-width) {
+		width: 302px;
+		height: 208px;
+	}
+
+	@media (max-width: $tablet-width) {
+		width: 242px;
+		height: 166px;
+	}
 }

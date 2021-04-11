@@ -17,6 +17,7 @@
 
 .pets__title {
 	@include offset(0, 0);
+	margin: 0 auto;
 	margin-bottom: 23px;
 
 	@media (max-width: $desktop-width) {
@@ -38,7 +39,7 @@
 	margin: 0 auto 38px auto;
 
 	@media (max-width: $tablet-width) {
-		@include fonts(14px, 14px);
+		@include fonts(14px, 19px);
 		max-width: 282px;
 	}
 }

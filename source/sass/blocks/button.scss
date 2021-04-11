@@ -16,4 +16,10 @@
 	&:active {
 		background-color: rgba($brown, 0.2);
 	}
+
+	@media (max-width: $tablet-width) {
+  	width: 141px;
+  	padding: 15px 0;
+  	@include fonts(12px, 14px);
+	}
 }
