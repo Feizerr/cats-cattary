@@ -2,33 +2,69 @@
 	text-align: center;
 	padding-top: 83px;
 	padding-bottom: 72px;
+
+	@media (max-width: $desktop-width) {
+		padding-bottom: 192px;
+	}
 }
 
-.team__wrapper {
-	margin: 0px 103px;
+.team__slider {
+	padding-left: 309px;
+
+	@media (max-width: $desktop-width) {
+		padding-left: 0;
+	}
+}
+
+.team__wrapper-outer {
+	position: relative;
+}
+
+.team__decoration-wrapper {
+	background-color: $dark;
+	border: 1px solid rgba($brown, 0.43);
+	padding: 23px 34px;
+	width: 660px;
+
+	@media (max-width: $desktop-width) {
+		width: 649px;
+	}
+
+	@media (max-width: $tablet-width) {
+		width: 290px;
+		border: none;
+		padding: 0;
+	}
 }
 
 .team__item-wrapper {
-	border: 1px solid rgba($brown, 0.43);
-	width: 660px;
-	min-height: 402px;
-	padding: 23px 34px;
+	background-color: $dark-grey;
 	box-sizing: border-box;
-
 }
 
 .team__blockquote-wrapper {
 	@include offset(0, 0);
-	background-color: $dark-grey;
-	min-height: 356px;
-	padding: 69px 20px 70px 98px;
+	padding: 69px 20px 34px 98px;
 	box-sizing: border-box;
 	text-align: left;
+
+	@media (max-width: $tablet-width) {
+		padding: 88px 11px 30px 11px;
+		width: 268px;
+	}
 }
 
 .team__title {
-	@include offset(0, 0);
+	padding: 0;
+	padding-bottom: 10px;
+	margin: 0 auto;
 	margin-bottom: 23px;
+	width: 510px;
+
+	@media (max-width: $tablet-width) {
+		@include fonts(28px, 32px);
+		width: 232px;
+	}
 }
 
 .team__description {
@@ -37,6 +73,12 @@
 	width: 510px;
 	margin: 0 auto;
 	margin-bottom: 22px;
+
+	@media (max-width: $tablet-width) {
+		@include fonts(14px, 19px);
+		width: 252px;
+		padding-bottom: 103px;
+	}
 }
 
 .team__item-title {
@@ -46,6 +88,11 @@
 	color: $brown;
 	margin-bottom: 10px;
 	font-style: normal;
+
+	@media (max-width: $tablet-width) {
+		@include fonts(18px, 21px);
+		width: 252px;
+	}
 }
 
 .team__item-jobTitle {
@@ -53,8 +100,13 @@
 	@include roboto(500);
 	line-height: 21px;
 	color: $brown;
-	margin-bottom: 25px;
+	padding-bottom: 25px;
 	font-style: normal;
+
+	@media (max-width: $tablet-width) {
+		@include fonts(14px, 19px);
+		width: 252px;
+	}
 }
 
 .team__opinion {
@@ -62,4 +114,55 @@
 	@include roboto(300);
 	width: 399px;
 	text-align: left;
+
+	@media (max-width: $tablet-width) {
+		@include fonts(14px, 19px);
+		width: 268px;
+	}
+}
+
+.team__img-wrapper{
+	width: 360px;
+	height: 356px;
+	position: absolute;
+	top: 0;
+	left: -300px;
+	z-index: 2;
+
+
+	@media (max-width: $desktop-width) {
+		top: 300px;
+		left: 358px;
+	}
+
+	@media (max-width: $tablet-width) {
+		width: 126px;
+		height: 126px;
+
+		top: -60px;
+		left: 80px;
+	}
+
+}
+
+.team__img {
+
+	@media (max-width: $desktop-width) {
+		width: 207px;
+		height: 208px;
+	}
+
+	@media (max-width: $tablet-width) {
+		width: 126px;
+		height: 126px;
+	}
+}
+
+.team__social {
+	display: flex;
+	width: 67px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 100px;
+	padding-bottom: 100px;
 }

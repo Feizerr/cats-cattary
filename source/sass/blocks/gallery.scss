@@ -6,6 +6,15 @@
 	grid-row-gap: 30px;
 	margin-bottom: 55px;
 
+	@media (max-width: $desktop-width) {
+		display: flex;
+		margin-bottom: 202px;
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: $tablet-width) {
+    margin-bottom: 45px;
+	}
 }
 
 .gallery__item {

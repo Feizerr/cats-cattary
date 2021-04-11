@@ -3,6 +3,10 @@
 		background-repeat: no-repeat;
   	background-size: auto 100% ;
   	background-position: right;
+
+  	@media (max-width: $desktop-width) {
+		background-image: url("../img/ginger-cat-tablet.png");
+	}
 }
 
 .header__container {
@@ -112,12 +116,16 @@
 
 .header__social-list {
 	min-height: 64px;
-	margin-bottom-bottom: 64px;
+	margin-bottom: 64px;
 
 	@media (max-width: $desktop-width) {
 		height: 17px;
-		min-width: 57px;
-		margin-bottom-bottom: 43px;
+		width: 69px;
+		margin-bottom: 43px;
+		display: flex;
+		justify-content: space-between;
+		padding-left: 12px
+
 	}
 
 	@media (max-width: $tablet-width) {

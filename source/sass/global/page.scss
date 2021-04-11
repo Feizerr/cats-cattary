@@ -14,11 +14,12 @@
 	font-style: normal;
 	font-size: 16px;
 	line-height: 24px;
+	box-sizing: border-box;
 }
 
-page__container {
+.page__container {
 	position: relative;
-  width: 1366px;
+  max-width: 1366px;
   margin: 0 auto;
 }
 

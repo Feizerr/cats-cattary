@@ -1,6 +1,8 @@
 @import "global/fonts.scss";
 @import "global/mixins.scss";
 @import "global/variables.scss";
+@import "blocks/social.scss";
+@import "blocks/slider.scss";
 @import "blocks/section.scss";
 @import "global/page.scss";
 @import "blocks/advantages.scss";
@@ -11,8 +13,6 @@
 @import "blocks/pets.scss";
 @import "blocks/questions.scss";
 @import "blocks/reviews.scss";
-@import "blocks/slider.scss";
-@import "blocks/social.scss";
 @import "blocks/footer.scss";
 @import "blocks/specificities.scss";
 @import "blocks/team.scss";

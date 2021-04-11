@@ -2,6 +2,11 @@
 	@include yeseva();
 	@include fonts(36px, 41px);
 	@include offset(0, 0);
+
+	@media (max-width: $tablet-width) {
+		@include fonts(28px, 32px);
+		width: 270px;
+	}
 }
 
 .section__description {
@@ -9,6 +14,15 @@
 	@include offset(0, 0);
 	font-size: 16px;
 	color: $brown;
+
+	@media (max-width: $desktop-width) {
+		line-height: 22px;
+	}
+
+	@media (max-width: $tablet-width) {
+		@include fonts(14px, 19px);
+		width: 270px;
+	}
 }
 
 .section__wrapper {
@@ -16,4 +30,14 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 80px;
+
+  @media (max-width: $desktop-width) {
+		max-width: 767px;
+		padding: 0 29px;
+	}
+
+	@media (max-width: $tablet-width) {
+		min-width: 320px;
+		padding: 0 15px;
+	}
 }

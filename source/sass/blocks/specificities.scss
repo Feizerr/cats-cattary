@@ -16,6 +16,10 @@
 	width: 735px;
 	line-height: 26px;
 	margin: 0 auto;
+
+	@media (max-width: $desktop-width) {
+		width: 443px;
+	}
 }
 
 .specificities__list {
