@@ -4,4 +4,14 @@
 
 .social__link {
 	@include link();
+	color: white;
+
+	&:hover {
+    color: $brown;
+
+  }
+
+  &:active {
+   color: rgba($brown, 0.5);
+  }
 }

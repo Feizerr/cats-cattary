@@ -62,6 +62,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	margin-right: 42px;
+	background-color: $brown;
 
 	& :last-child {
 		margin-right: 0;
@@ -102,9 +103,8 @@
 	display: block;
 	margin: 0 auto;
 	vertical-align: middle;
-	fill: $brown;
+	fill: $white;
+	color: initial;
+	stroke: $brown;
 
-	&:hover {
-		fill: $white;
-	}
 }

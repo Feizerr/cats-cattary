@@ -69,6 +69,14 @@
 	&--active {
 		color: $white;
 	}
+
+	&:hover {
+		color: $brown;
+	}
+
+	&:active {
+		color: rgba($brown, 0.5);
+	}
 }
 
 .pets__btn-wraper {
