@@ -31,8 +31,8 @@
 }
 
 .care__title {
-	margin-bottom: 48px;
 	margin: 0 auto;
+	margin-bottom: 48px;
 
 	@media (max-width: $desktop-width) {
 		margin-bottom: 37px;
@@ -71,6 +71,10 @@
 	padding-right: 58px;
 	box-sizing: border-box;
 
+	&:hover {
+		border-right: 60px solid rgba($brown, 0.5);
+	}
+
 
 	@media (max-width: $desktop-width) {
 		width: 558px;
@@ -96,6 +100,19 @@
 
 .care__link {
 	@include link();
+	position: relative;
+
+	&:after {
+		content: "";
+	  display: block;
+	  position: absolute;
+	  top: 30px;
+	  right: -500px;
+	  width: 10.56px;
+	  height: 15.96px;
+	  background-image: url("../img/arrow.svg");
+	  background-repeat: no-repeat;
+	}
 }
 
 .care__list-title {

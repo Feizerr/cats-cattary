@@ -18,8 +18,8 @@
 
 .advantages__text {
 	line-height: 22px;
-	margin-bottom: 47px;
 	margin: 0 auto;
+	margin-bottom: 47px;
 
 	@media (max-width: $desktop-width) {
 		width: 443px;
@@ -106,5 +106,4 @@
 	fill: $white;
 	color: initial;
 	stroke: $brown;
-
 }
