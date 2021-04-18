@@ -33,14 +33,12 @@
 
 
 .pets__description {
-	@include offset(0, 0);
 	line-height: 26px;
-	max-width: 516px;
-	margin: 0 auto 38px auto;
+	margin-bottom: 38px;
+	max-width: 523px;
 
 	@media (max-width: $tablet-width) {
 		@include fonts(14px, 19px);
-		max-width: 282px;
 	}
 }
 

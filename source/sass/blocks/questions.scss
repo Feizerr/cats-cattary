@@ -1,7 +1,7 @@
 .questions {
 	text-align: center;
 	background-color: $dark-grey;
-	padding-top: 73px;
+	padding-top: 100px;
 	padding-bottom: 80px;
 }
 
@@ -11,8 +11,8 @@
 	margin-bottom: 23px;
 }
 
+
 .questions__description {
-	@include roboto(400);
 	@include offset(0, 0);
 	margin: 0 auto;
 	margin-bottom: 53px;
@@ -24,7 +24,8 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	padding-left: 275px;
+	padding-left: 200px;
+	counter-reset: faq-counter;
 
 	@media (max-width: $desktop-width) {
 		padding-left: 130px;
@@ -41,20 +42,46 @@
 	width: 793px;
 	margin: 0 auto;
 	margin-bottom: 37px;
+	position: relative;
+	counter-increment: faq-counter;
 
 	@media (max-width: $desktop-width) {
 		width: 553px;
-		margin-bottom: 22px;
+		margin-bottom: 27px;
 	}
 
 	@media (max-width: $tablet-width) {
 		width: 290px;
+		margin-bottom: 22px;
 	}
 
 	&:last-child {
 		margin-bottom: 0;
 	};
+}
 
+.questions__item::before {
+
+
+	content: "0"counter(faq-counter);
+	position: absolute;
+	left: -120px;
+  top: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 82px;
+  color: #a07b50;
+
+  @media (max-width: $desktop-width) {
+		left: -80px;
+		font-size: 50px;
+	}
+
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
 }
 
 .questions__button-block {
@@ -73,10 +100,14 @@
 	max-width: 610px;
 	padding: 47px 20px 45px 43px;
 
+	@media (max-width: $desktop-width) {
+		padding: 30px 30px 30px 30px;
+	}
+
 	@media (max-width: $tablet-width) {
 		@include fonts(14px, 19px);
-		padding: 15px 15px 15px 15px;
-
+		padding: 12px 12px 12px 12px;
+		max-width: 219px;
 	}
 }
 
@@ -93,6 +124,7 @@
 	border-left: 1px solid $brown;
 	background-color: inherit;
 	text-align: left;
+	position: relative;
 
 	&--active {
 		background-color: $brown;
@@ -100,15 +132,31 @@
 	}
 
 	@media (max-width: $tablet-width) {
-		width: 44px;
+		width: 43px;
 		@include fonts(14px, 19px);
 	}
+}
+
+.questions__button--active {
+	background-image: url('../img/minus.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.questions__button--close {
+	background-image: url('../img/plus.svg');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .questions__answer {
 	@include roboto(300);
 	padding: 40px 80px 40px 42px;
 	max-width: 70%;
+
+	@media (max-width: $desktop-width) {
+		padding: 30px 30px 30px 30px;
+	}
 
 	@media (max-width: $tablet-width) {
 		padding: 15px 15px 15px 15px;

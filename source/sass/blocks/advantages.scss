@@ -20,14 +20,13 @@
 	line-height: 22px;
 	margin: 0 auto;
 	margin-bottom: 47px;
+	max-width: 90%;
 
 	@media (max-width: $desktop-width) {
-		width: 443px;
 		margin-bottom: 58px;
 	}
 
 	@media (max-width: $tablet-width) {
-		width: 284px;
 		margin-bottom: 40px;
 	}
 }

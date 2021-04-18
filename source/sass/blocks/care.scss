@@ -13,6 +13,7 @@
   }
 
   @media (max-width: $tablet-width) {
+  	padding-top: 88px;
     background-image: url('../img/background-cat-mobile.jpg');
 
     @media (min-resolution: 2dppx) {
@@ -95,6 +96,10 @@
 		padding-left: 11px;
 		margin-bottom: 30px;
 		border-right: 46px solid $brown;
+
+		&:hover {
+			border-right: 46px solid rgba($brown, 0.5);
+		}
 	}
 }
 
@@ -112,6 +117,16 @@
 	  height: 15.96px;
 	  background-image: url("../img/arrow.svg");
 	  background-repeat: no-repeat;
+
+	  @media (max-width: $desktop-width) {
+	  	top: 30px;
+	  	right: -480px;
+		}
+
+		@media (max-width: $tablet-width) {
+	  	top: 30px;
+	  	right: -258px;
+		}
 	}
 }
 

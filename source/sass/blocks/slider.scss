@@ -6,3 +6,23 @@
 	margin: 0 auto;
 	justify-content: center;
 }
+
+.slider__button {
+	border: none;
+	position: absolute;
+	display: block;
+	background-position: 0 0;
+	background-color: inherit;
+	width: 12px;
+	height: 29px;
+	background-repeat: no-repeat;
+	z-index: 10;
+
+	&--prev {
+		background-image: url('../img/left.svg');
+	}
+
+	&--next {
+		background-image: url('../img/right.svg');
+	}
+}
